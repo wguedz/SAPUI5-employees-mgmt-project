@@ -1,2 +1,2 @@
-# SAPUI5-employee-mgmt-project
+# SAPUI5-employees-mgmt-project
 Employee management project in SAPUI5
