@@ -1,0 +1,47 @@
+
+<mvc:View 
+    controllerName="logaligroup.sapui5.controller.App" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:tnt="sap.tnt" 
+    displayBlock="true" 
+    xmlns="sap.m"> 
+    <tnt:ToolHeader >
+        <Button icon="sap-icon://menu2" type="Transparent" />
+        <Image src="test-resources/sap/tnt/images/SAP_Logo.png" />
+        <Text text="{i18n>title}" wrapping="false" />
+        <ToolbarSpacer />
+        <Button icon="sap-icon://search" type="Transparent" />
+        <Button icon="sap-icon://task" type="Transparent" />
+        <Button icon="sap-icon://bell" type="Transparent" />
+        <Button icon="sap-icon://grid" type="Transparent" />
+    </tnt:ToolHeader>           
+	<Page id="page" title="{i18n>title}">
+		<content>
+            <Panel expandable="true" 
+                    expanded="true"
+                    headerText="{i18n>PanelEmployees}" 
+                    width="auto" 
+                    class="sapUiResponsiveMargin">
+                <Button id = "createEmployeeBtn" 
+                        text="{i18n>createEmployeeBtn}" 
+                        icon="sap-icon://add-employee"
+                        class="sapUiTinyMarginBegin"
+                        press="fnCreateEmployee"/>     
+                <Button id = "lookupEmployeeBtn"
+                        text="{i18n>lookupEmployeeBtn}" 
+                        icon="sap-icon://employee-lookup"
+                        class="sapUiTinyMarginBegin"/>                                                  
+            </Panel>     
+                <Panel expandable="true" 
+                        expanded="true"
+                        headerText="{i18n>PanelOrders}" 
+                        width="auto" 
+                        class="sapUiResponsiveMargin">
+                    <Button id = "sigOrderBtn"
+                            text="{i18n>sigOrderBtn}" 
+                            icon="sap-icon://eraser"
+                            class="sapUiTinyMarginBegin"/>                         
+                </Panel> 
+        </content>
+	</Page>
+</mvc:View>

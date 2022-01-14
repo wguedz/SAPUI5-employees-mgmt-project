@@ -1,0 +1,11 @@
+<mvc:View 
+    controllerName="logaligroup.sapui5.controller.App" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:tnt="sap.tnt" 
+    height="100%"
+    displayBlock="true" 
+    xmlns="sap.m">
+	<Shell>
+		<App id="app" /> 
+	</Shell>
+</mvc:View>

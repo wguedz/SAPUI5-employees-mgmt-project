@@ -18,7 +18,7 @@
         "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
         "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/employees-mgmt/sapui5\"}"
       },
-      "envFile": "${workspaceFolder}/sapui5/.env1",
+      "envFile": "${workspaceFolder}/sapui5/.env2",
       "preLaunchTask": "Build employees-mgmt"
     }
   ]

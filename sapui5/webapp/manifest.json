@@ -37,10 +37,10 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "logaligroup.sapui5.view.MainView",
+			"viewName": "logaligroup.sapui5.view.App",
 			"type": "XML",
 			"async": true,
-			"id": "MainView"
+			"id": "App"
 		},
 		"dependencies": {
 			"minUI5Version": "1.60.1",
@@ -77,19 +77,33 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteMainView",
-				"pattern": "RouteMainView",
-				"target": ["TargetMainView"]
-			}],
+			"routes": [
+            {
+				"name": "RouteApp",
+				"pattern": "",
+				"target": ["TargetOverview"]
+			},
+            {
+				"name": "CreateEmployee",
+				"pattern": "createEmployee",
+				"target": ["CreateEmployee"]
+			}    
+        ],
 			"targets": {
-				"TargetMainView": {
+				"TargetOverview": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewId": "MainView",
-					"viewName": "MainView"
-				}
+					"viewId": "Overview",
+					"viewName": "Overview"
+				},
+				"CreateEmployee": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "CreateEmployee",
+					"viewName": "CreateEmployee"
+				}                                   
 			}
 		}
 	}
