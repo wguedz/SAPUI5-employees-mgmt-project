@@ -17,31 +17,26 @@
     </tnt:ToolHeader>           
 	<Page id="page" title="{i18n>title}">
 		<content>
-            <Panel expandable="true" 
-                    expanded="true"
-                    headerText="{i18n>PanelEmployees}" 
-                    width="auto" 
-                    class="sapUiResponsiveMargin">
-                <Button id = "createEmployeeBtn" 
-                        text="{i18n>createEmployeeBtn}" 
-                        icon="sap-icon://add-employee"
-                        class="sapUiTinyMarginBegin"
-                        press="fnCreateEmployee"/>     
-                <Button id = "lookupEmployeeBtn"
-                        text="{i18n>lookupEmployeeBtn}" 
-                        icon="sap-icon://employee-lookup"
-                        class="sapUiTinyMarginBegin"/>                                                  
+            <Panel expandable="true" expanded="true" headerText="{i18n>PanelEmployees}" width="auto" class="sapUiResponsiveMargin">
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>createEmployeeBtn}" press="fnCreateEmployee">
+                    <TileContent>
+                        <ImageContent src="sap-icon://add-employee" />
+                    </TileContent>
+                </GenericTile> 
+                      
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>lookupEmployeeBtn}" press="fnLookupEmployee">
+                    <TileContent>
+                        <ImageContent src="sap-icon://employee-lookup" />
+                    </TileContent>
+                </GenericTile>                                 
             </Panel>     
-                <Panel expandable="true" 
-                        expanded="true"
-                        headerText="{i18n>PanelOrders}" 
-                        width="auto" 
-                        class="sapUiResponsiveMargin">
-                    <Button id = "sigOrderBtn"
-                            text="{i18n>sigOrderBtn}" 
-                            icon="sap-icon://eraser"
-                            class="sapUiTinyMarginBegin"/>                         
-                </Panel> 
+            <Panel expandable="true" expanded="true" headerText="{i18n>PanelOrders}" width="auto" class="sapUiResponsiveMargin">
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>sigOrderBtn}" press="fnSigOrderBtn">
+                    <TileContent>
+                        <ImageContent src="sap-icon://eraser" />
+                    </TileContent>
+                </GenericTile>                 
+            </Panel> 
         </content>
 	</Page>
 </mvc:View>
