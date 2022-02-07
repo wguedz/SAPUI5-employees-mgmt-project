@@ -40,7 +40,7 @@
 			"viewName": "logaligroup.sapui5.view.App",
 			"type": "XML",
 			"async": true,
-			"id": "App"
+			"id": "app"
 		},
 		"dependencies": {
 			"minUI5Version": "1.60.1",
@@ -79,14 +79,14 @@
 			},
 			"routes": [
             {
-				"name": "RouteApp",
+				"name": "RouteOverview",
 				"pattern": "",
 				"target": ["TargetOverview"]
 			},
             {
-				"name": "CreateEmployee",
-				"pattern": "createEmployee",
-				"target": ["CreateEmployee"]
+				"name": "RouteCreateEmployee",
+				"pattern": "CreateEmployee",
+				"target": ["TargetCreateEmployee"]
 			}    
         ],
 			"targets": {
@@ -97,7 +97,7 @@
 					"viewId": "Overview",
 					"viewName": "Overview"
 				},
-				"CreateEmployee": {
+				"TargetCreateEmployee": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,

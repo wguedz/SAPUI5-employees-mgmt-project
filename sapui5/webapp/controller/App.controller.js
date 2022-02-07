@@ -12,11 +12,7 @@ sap.ui.define([
 		return Controller.extend("logaligroup.sapui5.controller.App", {
 			onInit: function () {
 
-			}, 
-
-            fnCreateEmployee : function(){
-                this.getOwnerComponent().getRouter().navTo("CreateEmployee");                       
-            }
+			}
 
 		});
 	});

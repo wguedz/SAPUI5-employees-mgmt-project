@@ -1,42 +1,40 @@
 
 <mvc:View 
-    controllerName="logaligroup.sapui5.controller.App" 
+    controllerName="logaligroup.sapui5.controller.Overview" 
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns:tnt="sap.tnt" 
     displayBlock="true" 
-    xmlns="sap.m"> 
-    <tnt:ToolHeader >
-        <Button icon="sap-icon://menu2" type="Transparent" />
-        <Image src="test-resources/sap/tnt/images/SAP_Logo.png" />
-        <Text text="{i18n>title}" wrapping="false" />
-        <ToolbarSpacer />
-        <Button icon="sap-icon://search" type="Transparent" />
-        <Button icon="sap-icon://task" type="Transparent" />
-        <Button icon="sap-icon://bell" type="Transparent" />
-        <Button icon="sap-icon://grid" type="Transparent" />
-    </tnt:ToolHeader>           
+    xmlns="sap.m">  
+       
 	<Page id="page" title="{i18n>title}">
 		<content>
-            <Panel expandable="true" expanded="true" headerText="{i18n>PanelEmployees}" width="auto" class="sapUiResponsiveMargin">
-                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>createEmployeeBtn}" press="fnCreateEmployee">
+
+            <Panel expandable="true" expanded="true" headerText="{i18n>panelEmployees}" width="auto" class="sapUiResponsiveMargin">
+                
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>btnCreateEmployee}" press="fnCreateEmployee">
                     <TileContent>
                         <ImageContent src="sap-icon://add-employee" />
                     </TileContent>
                 </GenericTile> 
                       
-                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>lookupEmployeeBtn}" press="fnLookupEmployee">
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>btnLookupEmployee}" press="fnLookupEmployee">
                     <TileContent>
                         <ImageContent src="sap-icon://employee-lookup" />
                     </TileContent>
-                </GenericTile>                                 
+                </GenericTile> 
+
             </Panel>     
-            <Panel expandable="true" expanded="true" headerText="{i18n>PanelOrders}" width="auto" class="sapUiResponsiveMargin">
-                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>sigOrderBtn}" press="fnSigOrderBtn">
+
+            <Panel expandable="true" expanded="true" headerText="{i18n>panelOrders}" width="auto" class="sapUiResponsiveMargin">
+                
+                <GenericTile  class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{i18n>btnSignalOrder}" press="fnSigOrderBtn">
                     <TileContent>
                         <ImageContent src="sap-icon://eraser" />
                     </TileContent>
-                </GenericTile>                 
+                </GenericTile>   
+                              
             </Panel> 
+
         </content>
-	</Page>
+	</Page> 
 </mvc:View>
